@@ -1,0 +1,118 @@
+:root {
+  --background : #7cd8d5; /* sky */
+  --active: #f53240; /* bright coral */
+  --highlight: #f9be02; /* golden */
+  --accent: #02c8a7; /* aquamarine */
+  --color: #333; /* for text and shadows */
+  --light: #fcfbf2; /* for text on dark backgrounds */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  background-color: var(--active);
+  color: var(--light);
+  width:100%;
+}
+
+h1, h2 {
+  font-family: 'Chilanka', cursive;
+  margin:0;
+  padding:1em;
+}
+
+a:link {
+  color: var(--highlight);
+}
+
+a:visited {
+  color: var(--accent);
+}
+
+a:hover,
+a:active {
+  color: var(--active);
+}
+
+.navbar {
+  background-image: linear-gradient(var(--background-color), var(--accent));
+  background-color:var(--accent);
+  border-bottom: 1px solid var(--color);
+  box-shadow: 0 1px 3px var(--color);
+  height:2em;
+  width:100%;
+}
+
+nav {
+  display:table;
+  height:2em;
+  margin:0 auto;
+}
+
+nav .nav-item {
+  display:table-cell;
+  padding: 0.5rem 1.5rem;
+  text-align:center;
+  text-transform:uppercase;
+  vertical-align: middle;
+}
+
+.nav-item:hover {
+  background-color:var(--light);
+  color:var(--color);
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--light);
+  text-decoration:none;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--color);
+}
+
+main {
+  background: var(--light);
+  border: 1px solid #999;
+  color: var(--color);
+  margin:1rem auto 2rem auto;
+  max-width:60rem;
+  min-height:30rem;
+  padding:2em;
+  width:80%;
+}
+
+footer {
+  background-color: var(--color);
+  bottom: 0;
+  color: (--light);
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+}
