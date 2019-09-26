@@ -1,10 +1,10 @@
 :root {
-  --background : #7cd8d5; /* sky */
-  --active: #f53240; /* bright coral */
-  --highlight: #f9be02; /* golden */
-  --accent: #02c8a7; /* aquamarine */
-  --color: #333; /* for text and shadows */
-  --light: #fcfbf2; /* for text on dark backgrounds */
+  --background : #C5D9C8;
+  --active: #591836;
+  --highlight: #F2937E;
+  --accent: #88BABF;
+  --color: #333;
+  --light: #F2CFBB;
 }
 
 *,
@@ -41,6 +41,9 @@ header {
 h1, h2 {
   font-family: 'Chilanka', cursive;
   margin:0;
+}
+
+h1 {
   padding:1em;
 }
 
@@ -89,12 +92,12 @@ nav a:link,
 nav a:visited,
 nav a:hover,
 nav a:active {
-  color: currentColor;
+  color:var(--color);
   text-decoration:none;
 }
 
 main {
-  background: var(--light);
+  background-color: white;
   border: 1px solid #999;
   color: var(--color);
   margin:1rem auto 2rem auto;
