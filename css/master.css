@@ -86,14 +86,11 @@ nav .nav-item {
 }
 
 nav a:link,
-nav a:visited {
-  color: var(--light);
-  text-decoration:none;
-}
-
+nav a:visited,
 nav a:hover,
 nav a:active {
-  color: var(--color);
+  color: currentColor;
+  text-decoration:none;
 }
 
 main {
