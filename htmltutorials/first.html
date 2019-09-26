@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your First HTML Page</title>
+
+  <link href="https://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d87ad8c94f8a600197df2b7&product=inline-share-buttons' async='async'></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+</head>
+<body>
+  <header>
+    <h1>Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="../generaltutorials/">Design</a></div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</a></div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Your First HTML Page</h2>
+    <p>
+      Let’s get started by creating a web page. Then I'll go back and explain what
+      all that markup stuff means. Are you ready? Let's go then!
+    </p>
+
+    <h3>Creating the page</h3>
+    <p>
+      It is extremely important that when you edit an HTML file that you do it in an
+      application that can save files as plain text. If you don't have a program that
+      is specifically created for working with HTML files, you can use Notepad on
+      Windows, TextEdit on macOS, or the default text editor on Linux (on Ubuntu, it
+      seems to be "Text Editor").
+    </p>
+    <p>
+      Open your text editor and enter the following text:
+    </p>
+
+<pre>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="utf-8" />
+    &lt;title>My First Web Page&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Irene P. Smith&lt;/h1>
+    &lt;p>Welcome to my very first web page. It isn't fancy
+    but it shows how easy it is to create a web page.&lt;/p>
+    &lt;h2>Contact me at:&lt;/h2>
+    &lt;address>
+        &lt;!-- Replace the following information with your own! -->
+        Irene Smith<br>
+        irene@playingwithwebdesign.com
+    &lt;/address>
+&lt;/body>
+&lt;/html>
+</pre>
+
+    <p>
+      Save the file into a folder on your hard drive. Most editors will
+      save the file you are editing when you press **Ctrl + S**.
+    </p>
+
+    <p>
+      A good choice for the location of the file on Microsoft Windows is
+      a new folder in the “Documents” folder. Name it “myfirst.html” or
+      something similar.
+    </p>
+
+    <p class="note">
+      <strong>NOTE:</strong> Mac users can create a directory under the \Users\UserName\Documents
+      and Linux users can create a new directory under /home/UserName/Documents.
+    </p>
+
+    <p>
+      Now that you have saved the file, give yourself a round of applause. You just
+      created your first web page!
+    </p>
+
+    <h3>Viewing the results</h3>
+    <p>
+      Now open the file in whatever web browser you use. In most cases, <kbd>Ctrl</kbd> + <kbd>O</kbd>
+      on Windows and Linux or <kbd>Cmd</kbd> + <kbd>O</kbd> on macOS will let you browse to a file on
+      your local computer and open it. Your web page should look something like this:
+    </p>
+
+    <img class="example" src="img/myfirst.png" alt="screenshot of myfirst.html">
+
+    <p>
+      Now that you've created your first page, let's talk about what all that "stuff"
+    means and how much of it is <em>necessary</dm>.
+    </p>
+
+    <p class="centered">
+      <a href="anatomy.html">Anatomy of an HTML Page</a> <i class="fad fa-hand-point-right"></i>
+    </p>
+  </main>
+
+  <footer>
+    <div>Copyright &copy; 1998 - 2019, Irene Smith</div>
+    <div class="sharethis-inline-share-buttons"></div>
+  </footer>
+
+  <!-- End of content -->
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+</body>
+</html>

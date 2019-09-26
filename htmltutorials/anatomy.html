@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anatomy of an HTML Page</title>
+
+  <link href="https://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d87ad8c94f8a600197df2b7&product=inline-share-buttons' async='async'></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+</head>
+<body>
+  <header>
+    <h1>Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="../generaltutorials/">Design</a></div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</a></div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Anatomy of an HTML Page</h2>
+    <p>
+      Creating a website like Facebook or Twitter is far more than coding in HTML,
+      but you have to start somewhere and HTML is a good place to begin. Everything
+      else you learn about web development builds on your understanding of HTML.
+    </p>
+
+    <h3>A matter of semantics</h3>
+
+    <p>
+      A web page contains multiple elements. The important key to remember
+      is that HTML defines the meaning or semantics of elements on the page rather
+      than the look or layout of the content. Look and layout are the job of
+      <abbr title="Cascading StyleSheets">CSS</abbr> and JavaScript and other
+      web-based programming languages such as C#, Python, or PHP, provide the
+      interactivity.
+    </p>
+
+    <p>
+      A page can be divided into sections, or articles, and each might have its own
+      header and footer. You might have multiple levels of header in a single page,
+      but according to the HTML specification, you should only have one top level
+      header on the page.
+    </p>
+
+    <h3>Examining your page</h3>
+
+    <p>
+      Remember that first web page you created? Let's examine the code. Here is the
+      code that we created:
+    </p>
+    
+<pre>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="utf-8" />
+    &lt;title>My First Web Page&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Irene P. Smith&lt;/h1>
+    &lt;p>Welcome to my very first web page. It isn't fancy
+    but it shows how easy it is to create a web page.&lt;/p>
+    &lt;h2>Contact me at:&lt;/h2>
+    &lt;address>
+        &lt;!-- Replace the following information with your own! -->
+        Irene Smith<br>
+        irene@playingwithwebdesign.com
+    &lt;/address>
+&lt;/body>
+&lt;/html>
+</pre>
+
+    <p>
+      The first line <code>&lt;!DOCTYPE html&gt;</code> tells the web browser that
+      this is an HTML page. Furthermore, it identifies the page as an <em>HTML5</em>
+      web page. Earlier versions of HTML required a more complicated DOCTYPE tag but
+      we don’t have to worry about that. And that is a good thing.
+    </p>
+
+    <p>
+      Why is that good? It means that the browser can expect the file to be compliant
+      with current usage. The browser won't have to deal with special coding made for
+      older web browsers. For details, take a look at the MDN web docs article
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">Quirks Mode and Standards Mode</a>
+      for a good description of the difference.
+    </p>
+
+    <p>
+      The second and last line of the document work together to define a container
+      for the rest of the page. &lt;html lang=”en”&gt; is the opening tag. The part that
+      follows “html” is an attribute that tells the browser that the language for
+      this page is English.  Other possibilities include: fr (French), de (German),
+      it (Italian), and es (Spanish). If you want to know more about the lang
+      attribute, you can check out the definition on the w3c website, Specifying the
+      language of content: <a href="https://www.w3.org/TR/html5/dom.html#the-lang-and-xmllang-attributes">the lang attribute</a>.
+    </p>
+
+    <p>
+      Next, in lines 3 to 6, we define the head section of the document. The head
+      section, not to be confused with the header, contains metadata for the current
+      page. (Metadata is data about the page, as opposed to data that will be
+      displayed in the browser.) In our example, I have included two bits of
+      information. The tag on line 4 tells the web browser how to interpret the text
+      on the page. The character set used in this case is “utf-8”. If you include the
+      character set information, it should be within the first 1,024 characters of
+      the page definition. The best way to ensure that is to place it first in the
+      head section of the page, right after the opening &lt;head&gt; tag.
+    </p>
+
+    <p>
+      The title tag is the only required child tag for the head section of a web
+      page. The text between &lt;title&gt; and lt;/title&gt; will usually be
+      displayed either in the title bar of the web browser or the tab for the page.
+    </p>
+
+    <p class="note">
+      In case you're curious UTF stands for Unicode Transformation Format and the
+      8 means that each character in a string is represented by 8 bits or one byte.
+    </p>
+
+    <p>
+      The next section, the &lt;body&gt;, is where all the visible content of the
+      page is placed. In the case of our sample document, we have a few bits of
+      information. We have a heading, the information between &lt;h1&gt; and &lt;/h1&gt;,
+      a paragraph, and finally a section that contains my name and email address.
+    </p>
+
+    <p>
+      The &lt;address&gt; tag is usually formatted as italic text, but that depends,
+      of course, on what formatting the web designer may have applied using CSS, but
+      it also depends on how the browser chooses to interpret the tag.
+    </p>
+
+    <div class="note">
+      <p>In case you're curious...</p>
+      <p><strong>Browsers and whitespace</strong> -- When the web browser interprets an HTML page,
+      it ignores whitespace. Characters such as spaces and carriage return/line feed
+      pairs are removed and replaced with a single space. You cannot format text
+      using extra spaces to produce indentations, or extra paragraph marks to create
+      new lines.</p>
+
+      <p>
+        If you want a new line, you have to use the &lt;br /&gt; tag. We’ll talk
+        about spaces later when we get to character entities.
+      </p>
+    </div>
+
+    <p>
+      This would be a good time to play around a little bit. See what you can do with
+      the few tags I’ve already shown you. It won’t be fancy, but the goal is to be
+      able to type any one of the tags you learn from this book without having to
+      look up what it means or how to use it.
+    </p>
+
+    <p class="centered">
+      <i class="fas fa-hand-point-left"></i>
+      <a href="first.html">Your First HTML Page</a> | 
+      <a href="moretags.html">More HTML Tags</a>
+      <i class="fas fa-hand-point-right"></i>
+    </p>
+
+  </main>
+
+  <footer>
+    <div>Copyright &copy; 1998 - 2019, Irene Smith</div>
+    <div class="sharethis-inline-share-buttons"></div>
+  </footer>
+
+  <!-- End of content -->
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+</body>
+</html>

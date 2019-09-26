@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>More HTML Tags</title>
+
+  <link href="https://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d87ad8c94f8a600197df2b7&product=inline-share-buttons' async='async'></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+</head>
+<body>
+  <header>
+    <h1>Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="../generaltutorials/">Design</a></div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</a></div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Working with Pictures</h2>
+
+    <p>There are several image file formats you can use you can insert into your
+    web pages. These are:</p>
+
+    <ul>
+      <li>"GIF"</li>
+      <li>"JPG"</li>
+      <li>"PNG"</li>
+      <li>"SVG"</li>
+    </ul>
+
+    <p>You have to provide the address of the graphic. You will almost always use
+    relative addresses for graphic files.</p>
+
+    <p class="note">
+      Netiquette dictates that your graphics be stored in your own web site's
+      directories or on another site that you own. The only exception to this rule
+      would be if the owner of the graphic specifically states that linking
+      directly to the graphic is all right.
+    </p>
+
+    <p><em>Never, never, link to other people's graphics without their permission.</em></p>
+
+    <p>If you need an explanation of why this isn't a good thing to do, take a
+    look at the information at: <a href="http://www.widowsweb.com/widows/plea.html">Web Prestige</a>.
+    </p>
+
+    <p>An image tag looks like this:</p>
+
+    <pre><code class="html language-html">&lt;img src="image.gif"&gt;
+    </code></pre>
+
+    <p>Of course, you would replace <em>"image.gif"</em> with the name of your own image
+    file. You can use relative addressing here as well, so you can store all of
+    your images in a directory called <em>images</em> or <em>pictures</em> or whatever. The path to
+    the file would then look like this: "images/image.gif". There are several other
+    pieces of information you should include in an img tag. One is text that
+    will be displayed for people who have browsers incapable of displaying graphics
+    (or who are surfing the 'net with graphics turned off.) You should also include
+    information about the height and width of the graphic, because it will allow the
+    web browser to display the text on your page more quickly because it can leave an
+    appropriate amount of space for the graphic while the graphic is downloaded to
+    the reader's computer. A full image tag would look like this:</p>
+
+    <pre><code class="html language-html">&lt;img src="fido.jpg" width="150" height="150" alt="Picture of my dog." &gt;
+    </code></pre>
+
+    <p class="centered">
+      <i class="fas fa-hand-point-left"></i>
+      <a href="links.html">Working with Links</a> | 
+      <a href="lists.html">Making Lists</a>
+      <i class="fas fa-hand-point-right"></i>
+    </p>
+  </main>
+
+  <footer>
+    <div>Copyright &copy; 1998 - 2019, Irene Smith</div>
+    <div class="sharethis-inline-share-buttons"></div>
+  </footer>
+
+  <!-- End of content -->
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+</body>
+</html>
