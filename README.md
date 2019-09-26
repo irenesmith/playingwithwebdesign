@@ -1,7 +1,9 @@
 # playingwithwebdesign
+
 A web design tutorial site created by Irene Smith
 
-Tutorials
+## Tutorials
+
 - General Design Tutorials
 - HTML Tutorials
 - CSS Tutorials
