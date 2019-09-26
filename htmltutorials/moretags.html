@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>More HTML Tags</title>
+
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d87ad8c94f8a600197df2b7&product=inline-share-buttons' async='async'></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+</head>
+<body>
+  <header>
+    <h1>Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="../generaltutorials/">Design</a></div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</a></div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>More HTML Tags</h2>
+
+    <p>Now that we have created a page, let’s back up a bit and talk about some of the
+    most commonly used tags. Tags define HTML elements.</p>
+
+    <h3>Creating paragraphs</h3>
+
+    <p>The first tag you need to know how to use is the paragraph element, defined by
+    opening and closing the &lt;p&gt; tags.</p>
+
+    <p>With the tags I have shown you so far, you could actually create a web page. It
+    would be boring to look at, but it would be a page that people could read.
+    Let’s add a little bit of interest. I’m going to give you a few more tags to
+    play with. And that is exactly what you should do, by the way, <em>play</em>!</p>
+
+    <h3>Headings</h3>
+
+    <p>HTML defines headings with levels from one to six. You use the heading tags the
+    same way as the paragraph tag. The heading tags look like this:</p>
+
+    <pre>
+    &lt;h1&gt;This is heading level 1&lt;/h1&gt;
+    &lt;h2&gt;This is heading level 2&lt;/h2&gt;
+    &lt;h3&gt;This is heading level 3&lt;/h3&gt;
+    &lt;h4&gt;This is heading level 4&lt;/h4&gt;
+    &lt;h5&gt;This is heading level 5&lt;/h5&gt;
+    &lt;h6&gt;This is heading level 6&lt;/h6&gt;
+    </pre>
+
+    <p>If you were to look at that code as it is rendered in the browser, it would
+    look something like this:</p>
+
+    <p><img src="img/heading_tags.png" alt="Heading tags" /></p>
+
+    <p>To tell the truth, I’ve seldom gone any further than heading level three, but
+    all six of them are there for your use. Remember that the look of each of these
+    headings can be modified through the use of CSS. What we are looking at here is
+    the default formatting supplied by my browser.</p>
+
+    <h2 id="characterformats">Character formats</h2>
+
+    <p>Here are some tags you can use to control the look of your text. These tags are
+    used on sections of text within a paragraph or other container. So far you’ve
+    seen the heading tags and paragraph tags; we’ll talk about other containers
+    later.</p>
+
+    <p>Here are the text formatting tags:</p>
+
+    <p><strong>&lt;em&gt;</strong> - The em tag defines text that should be emphasized in some way. You
+    might use it to set off a technical term, for example. Most browsers will
+    render text between the &lt;em> and &lt;/em&gt; tag using italics, but once we
+    start working with CSS, you’ll see that you can change that to suit the content
+    of the page.</p>
+
+    <p><strong>&lt;strong&gt;</strong> - The strong tag indicates text that should stand out. In most
+    cases the text marked as strong will be display in boldface type but this isn’t
+    necessarily so because, as with &lt;em&gt;, you can define other formatting for
+    this tag using CSS. All of the text between the opening &lt;strong&gt; and the
+    closing &lt;strong&gt; will be formatted so that it stands out from the
+    surrounding text.</p>
+
+    <p><strong>&lt;small&gt;</strong> - Text formatted with the small tag is rendered in a smaller font
+    than the surrounding text. It can be useful for a subtitle, or for information
+    that is less important than the surrounding text.</p>
+
+    <p><strong>&lt;cite&gt;</strong> - Used to mark the name of a work, such as a song, movie, book, or
+    play. This text is usually rendered as italic.</p>
+
+    <h3>Your second page</h3>
+
+    <p>Let’s finish by creating a slightly more interesting web page. Let’s create a
+    page about you! Once you’ve entered the following text, save it. The name
+    “aboutme.html” is a good choice for this one. Don’t forget to replace my
+    placeholder text with your own information! I’ve set off the text you need to
+    change with { and }, the curly braces.</p>
+
+    <pre><code class="html language-html">&lt;!DOCTYPE html&gt;
+    &lt;html lang=”en”&gt;
+      &lt;head&gt;
+        &lt;title&gt;About {Your Name}&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;All About {Your Name} &lt;small&gt;{your email}&lt;/small&gt;&lt;/h1&gt;
+        &lt;p&gt;Hi, my name is &lt;strong&gt;{Your first name}&lt;/strong&gt; and I have created
+          this website to show my skills with HTML. I am a {your job title} and
+          am learning HTML in order to expand my skills.&lt;/p&gt;
+        &lt;h2&gt;My Family&lt;/h2&gt;
+        &lt;p&gt;{Tell us about your family here.}&lt;/p&gt;
+        &lt;h2&gt;My Job&lt;/h2&gt;
+        &lt;p&gt;{Put stuff about your job here!}&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+
+    <p>For example, take a look at a screenshot of my “About Irene” page. Notice that
+    the text between &lt;small&gt; and &lt;/small&gt; is slightly smaller than the
+    rest of the line. Also notice the extra space between the headings and the
+    paragraphs. That can be changed. When you get to the second on CSS, I will teach
+    you exactly how to do that.</p>
+
+    <p>You’ve seen how to create a web page and how to use a handful of HTML tags. In
+    coming sections, we'll expand your knowledge of tags, and show you a little bit
+    about how to make your web pages more attractive.</p>
+
+    <h3>Exercises</h3>
+
+    <ol>
+    <li>
+      Create a basic web page that you could use as an "About" page on your
+      website. Include your name and a few paragraphs describing who you are.
+    </li>
+
+    <li>
+      Take the page that you created in Exercise 1 and add some headings. Include
+      multiple heading levels to divide the page into logical sections.
+    </li>
+
+    <li>
+      Look at your page one more time and add a few of the character
+      formatting tags.
+    </li>
+    </ol>    
+
+    <p class="centered">
+      <i class="fas fa-hand-point-left"></i>
+      <a href="anatomy.html">Anatomy of an HTML Page</a> | 
+      <a href="links.html">Working with Links</a>
+      <i class="fas fa-hand-point-right"></i>
+    </p>
+
+  </main>
+
+  <footer>
+    <div>Copyright &copy; 1998 - 2019, Irene Smith</div>
+    <div class="sharethis-inline-share-buttons"></div>
+  </footer>
+
+  <!-- End of content -->
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+</body>
+</html>

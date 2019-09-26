@@ -2,11 +2,16 @@
   --background : #C5D9C8;
   --active: #591836;
   --highlight: #F2937E;
+  --highlight-dark:rgb(232, 52, 5);
   --accent: #88BABF;
+  --accent-dark:rgb(5, 163, 177);
   --color: #333;
   --light: #F2CFBB;
 }
 
+/* ---------------------------
+   Global Styles
+   --------------------------- */
 *,
 *::before,
 *::after {
@@ -25,7 +30,7 @@ html {
 body {
   background-color: var(--background);
   color: var(--color);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: Arial, sans-serif;
   height: 100%;
   line-height: 1.5;
@@ -38,6 +43,37 @@ header {
   width:100%;
 }
 
+main {
+  background-color: white;
+  border: 1px solid #999;
+  color: var(--color);
+  margin:1rem auto 2rem auto;
+  max-width:60rem;
+  min-height:30rem;
+  padding:2em;
+  width:80%;
+}
+
+footer {
+  background-color: var(--color);
+  bottom: 0;
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+}
+
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------
+   Typography
+   --------------------------- */
 h1, h2 {
   font-family: 'Chilanka', cursive;
   margin:0;
@@ -47,12 +83,30 @@ h1 {
   padding:1em;
 }
 
+blockquote {
+  line-height:1;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: var(--active);
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+blockquote::after {
+  content: close-quote;
+  color: var(--active);
+  font-size:1.5em;
+  font-weight:bold;
+}
+
 a:link {
-  color: var(--highlight);
+  color: var(--highlight-dark);
 }
 
 a:visited {
-  color: var(--accent);
+  color: var(--accent-dark);
 }
 
 a:hover,
@@ -96,23 +150,27 @@ nav a:active {
   text-decoration:none;
 }
 
-main {
-  background-color: white;
-  border: 1px solid #999;
-  color: var(--color);
-  margin:1rem auto 2rem auto;
-  max-width:60rem;
-  min-height:30rem;
-  padding:2em;
-  width:80%;
+.example {
+  height:auto;
+  width:100%;
 }
 
-footer {
-  background-color: var(--color);
-  bottom: 0;
-  color: (--light);
-  left: 0;
-  padding: 1rem;
-  position: fixed;
-  right: 0;
+.note {
+  background-color:palegoldenrod;
+  border:1px solid var(--color);
+  margin:0.5rem auto;
+  padding:5px;
+  width:90%;
+}
+
+.note p:first-child {
+  margin-top:0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.fad, .fas {
+  font-size:3rem;
 }
