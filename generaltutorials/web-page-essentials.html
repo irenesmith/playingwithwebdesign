@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Page Essentials</title>
+
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+  <script>category='design';</script>
+</head>
+<body>
+  <header>
+    <h1 id="top-of-page">Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="./">Design</div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 id="page_essentials">Web Page Essentials</h1>
+
+    <ul>
+      <li><a href="#title">Title</a></li>
+      <li><a href="#navigation-list">Navigation List</a></li>
+      <li><a href="#topofpage">Top of Page Anchor</a></li>
+      <li><a href="#sectionanchors">Section Anchors</a></li>
+      <li><a href="#emaillink">E-Mail Link</a></li>
+      <li><a href="#copyrightnotice">Copyright Notice</a></li>
+      <li><a href="#graphicscredits">Graphics Credits</a></li>
+    </ul>
+
+    <p>Now that you know the basic sections that most web sites have, we
+    can talk about individual pages. Certain elements should be
+    included on every page in your web site. Let's list the true
+    essentials first:</p>
+
+    <h2 id="title">Title</h2>
+
+    <p><em>Every page</em> on your web site should have a title. To
+    include the title, use the &lt;title&gt; tag inside the
+    &lt;head&gt; section, like this:<br>&nbsp;<br></p>
+
+    <pre><code class="html language-html">&lt;Title&gt;Tangled Web - Tutorials&lt;/title&gt;
+    </code></pre>
+
+    <p>It's usually a good idea to include an abbreviated version of your
+    site's name in the title because this is the text that people will
+    see in their Bookmarks or Favorites list. It's sure a lot easier to
+    get back to The Tangled Web when a bookmark says
+    <strong>The Tangled Web</strong> than when there's a blank line in
+    the list, isn't it?</p>
+
+    <h2 id="navigation-list">Navigation List</h2>
+
+    <p>Even if your site uses graphic buttons for navigation, you should
+    also include a list of text links somewhere on each page as well.
+    For one thing, as I said earlier, there are people who surf the
+    'net with graphics turned off. For another, it makes a nice compact
+    way to list the major sections at the top or bottom of the page.
+    You'll notice that <em>every single page</em> at The Tangled Web has
+    a list of text links at the bottom.</p>
+
+    <h2 id="topofpage">Top of Page</h2>
+
+    <p>If any of the pages in your site are long, it's a nice feature to
+    add an id to the title or some other element near the the top of
+    the page, and then sprinkle links to this anchor through the page.
+    This means that at the end of a very long page full of text, the
+    user can click once and return to the top of the page almost
+    instantly, instead of having to scroll upwards slowly. An anchor
+    looks like this:</p>
+
+    <pre><code class=" html language- html">&lt;p id="PageTop"&gt;&lt;/p&gt;
+    </code></pre>
+
+    <p>You can put anything you like or nothing at all between the opening
+    and closing tag pair. It doesn't matter. To create a link to the
+    anchor, simply use the following tag:</p>
+
+    <pre><code class=" html language- html">&lt;p class="code"&gt;Back to the &lt;a href="#PageTop"&gt;Top of the Page&lt;/a&gt;&lt;/p&gt;
+    </code></pre>
+
+    <p>If you combine this tip with the next one, you can easily create a
+    simple table of contents for long pages.</p>
+
+    <h2 id="sectionanchors">Section Anchors</h2>
+
+    <p>If your page is long enough to require links back to the top of the
+    page, you should probably create anchors for each of the pages
+    sub-headings. All anchors are made the same way as the top of page
+    anchor in the previous tip, and all links to anchors are also made
+    the same way. An added advantage of creating link destinations
+    within a page with anchors is that you can link to the anchors from
+    other pages in your site as well. For example, if I had an anchor
+    called "LinkwareGraphics" on my links page, I could link
+    to it from any other page, like this:</p>
+
+    <pre><code class=" html language- html">&lt;p&gt;Check out these &lt;a href="links.html"&gt;links to other graphics sites.&lt;/a&gt;&lt;/p&gt;
+    </code></pre>
+
+    <!-- TODO: Remember to actually create a link for the try it out! -->
+
+    <p>And, just to show you that it really works (you can return by
+    clicking your browsers "Back" button) try this one: Web Site
+    Resources</p>
+
+    <h2 id="emaillink">E-Mail Link</h2>
+
+    <p>Once again with feeling! <em>Every single page</em> on your web
+    site needs to have a valid e-mail link! Not one, not two, every
+    page. I can't stress this enough. You need to give your visitors a
+    way to contact you. You don't absolutely have to have a guestbook
+    or a feedback form, but you <strong>MUST</strong> have a
+    way for visitors to reach you. In fact, some of the places that
+    give free web space make this one of the requirements you need to
+    fulfill in order to keep your free space! Frankly, I can't see any
+    reason for an honest web master to keep his e-mail a secret. If the
+    thought of too much spam scares you off, create an e-mail account
+    somewhere that you use only for your web site. Most of the free
+    e-mail services allow you to impose spam controls, so you can
+    quickly skim the good stuff and throw the junk away. It may take
+    time to set that up, but it's worth it. Even if the only messages
+    you get tell you about typos, at least you know someone is reading
+    your pages.</p>
+
+    <h2 id="copyrightnotice">Copyright Notice</h2>
+
+    <p>Think this isn't important? Want to donate your work to the public
+    domain? Fine. Even so, a notice that you have donated your work to
+    the public domain is in order. Copyright notices may not stop
+    thieves, but they do make it easier for honest people to give
+    credit where it is due, that is, to <strong>YOU</strong>!
+    In addition, it's much easier to prosecute copyright infringement
+    when your work is marked with a copyright notice.</p>
+
+    <h2 id="graphicscredits">Graphics Credits</h2>
+
+    <p>Who made your graphics?</p>
+
+    <p>You?</p>
+
+    <p>That's great, then you should add this information to your
+    copyright notice. If not, make sure you give credit where credit is
+    due and place a link to the artist's home page (if they have one)
+    on the page where you use the graphics. If you got your graphics
+    from a clip art collection, say so. Once again, you're not going to
+    stop thieves, but you'll make life much easier for honest people.</p>
+
+    <p>There's probably more I could add to this list. In fact, I will add
+    anything I should think of as time goes on. If I make any
+    significant changes to this tutorial, I'll mention it on my "What's
+    New" page.</p>
+  </main>
+  <footer id="page_footer">
+  </footer>
+
+  <!-- End of content -->
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>

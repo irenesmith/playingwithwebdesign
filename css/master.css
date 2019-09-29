@@ -47,7 +47,7 @@ main {
   background-color: white;
   border: 1px solid #999;
   color: var(--color);
-  margin:1rem auto 2rem auto;
+  margin:1rem auto 5rem auto;
   max-width:60rem;
   min-height:30rem;
   padding:2em;
@@ -142,10 +142,10 @@ nav .nav-item {
   color:var(--color);
 }
 
-nav a:link,
-nav a:visited,
-nav a:hover,
-nav a:active {
+.nav-item a:link,
+.nav-item a:visited,
+.nav-item a:hover,
+.nav-item a:active {
   color:var(--color);
   text-decoration:none;
 }
@@ -156,10 +156,10 @@ nav a:active {
 }
 
 .note {
-  background-color:palegoldenrod;
+  background-color:lemonchiffon;
   border:1px solid var(--color);
   margin:0.5rem auto;
-  padding:5px;
+  padding:1rem;
   width:90%;
 }
 
@@ -173,4 +173,47 @@ nav a:active {
 
 .fad, .fas {
   font-size:3rem;
+}
+
+#ireneMozilla {
+  float:left;
+  margin-right:10px;
+  border:1px solid #333;
+}
+
+#tangledWeb {
+  border:1px solid var(--color);
+  margin:0 auto;
+  width:100%;
+}
+
+#bottomNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+#link-list {
+  border-top: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#link-list li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0;
+}
+
+#link-list li::after {
+  content: '] ';
+}
+
+#link-list li::before {
+  content: '[';
 }
