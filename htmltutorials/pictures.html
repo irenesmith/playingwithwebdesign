@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>More HTML Tags</title>
+  <title>Working with Images</title>
 
-  <link href="https://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
-  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d87ad8c94f8a600197df2b7&product=inline-share-buttons' async='async'></script>
 
   <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/master.css">
+  <script>var category='html';</script>
 </head>
 <body>
   <header>
@@ -30,10 +29,10 @@
     </div>
   </header>
   <main>
-    <h2>Working with Pictures</h2>
+    <h2>Working with Images</h2>
 
     <p>There are several image file formats you can use you can insert into your
-    web pages. These are:</p>
+    web pages. These most commonly used are:</p>
 
     <ul>
       <li>"GIF"</li>
@@ -42,41 +41,79 @@
       <li>"SVG"</li>
     </ul>
 
-    <p>You have to provide the address of the graphic. You will almost always use
-    relative addresses for graphic files.</p>
+    <p>There are more, but </p>
 
-    <p class="note">
-      Netiquette dictates that your graphics be stored in your own web site's
-      directories or on another site that you own. The only exception to this rule
-      would be if the owner of the graphic specifically states that linking
-      directly to the graphic is all right.
-    </p>
+    <p>
+      In order to include an image on your site, you have to store it on your server
+      and provide the address of the graphic in an <code>img</code> tag. You will almost
+      always use relative addresses for graphic files.</p>
 
-    <p><em>Never, never, link to other people's graphics without their permission.</em></p>
+    <div class="note">
+      <p>
+        Netiquette dictates that your graphics be stored in your own web site's
+        directories or on another site that you own. The only exception to this rule
+        would be if the owner of the graphic specifically states that linking
+        directly to the graphic is all right.
+      </p>
 
-    <p>If you need an explanation of why this isn't a good thing to do, take a
-    look at the information at: <a href="http://www.widowsweb.com/widows/plea.html">Web Prestige</a>.
-    </p>
+      <p><em>Never, never, link to other people's graphics without their permission.</em></p>
+    </div>
 
     <p>An image tag looks like this:</p>
 
-    <pre><code class="html language-html">&lt;img src="image.gif"&gt;
-    </code></pre>
+    <pre>&lt;img src="image.gif" alt=""&gt;</pre>
 
-    <p>Of course, you would replace <em>"image.gif"</em> with the name of your own image
-    file. You can use relative addressing here as well, so you can store all of
-    your images in a directory called <em>images</em> or <em>pictures</em> or whatever. The path to
-    the file would then look like this: "images/image.gif". There are several other
-    pieces of information you should include in an img tag. One is text that
-    will be displayed for people who have browsers incapable of displaying graphics
-    (or who are surfing the 'net with graphics turned off.) You should also include
-    information about the height and width of the graphic, because it will allow the
-    web browser to display the text on your page more quickly because it can leave an
-    appropriate amount of space for the graphic while the graphic is downloaded to
-    the reader's computer. A full image tag would look like this:</p>
+    <p>
+      Of course, you would replace <em>"image.gif"</em> with the name of your own image
+      file. You can use relative addressing here as well, so you can store all of
+      your images in a directory called <em>images</em> or <em>pictures</em> or whatever. The path to
+      the file would then look like this: "images/image.gif".
+    </p>
+    
+    <p>
+      Here is an example:
+    </p>
+
+    <img src="img/chance_small.jpg" alt="Chancellor" width="428" height="524">
+
+    <p>
+      There are several other pieces of information you should include in an img tag.
+      One is text that will be displayed for people who have browsers incapable of
+      displaying graphics (or who are surfing the 'net with graphics turned off.)
+    </p>
+
+    <p>
+      You should also include information about the height and width of the graphic,
+      because it will allow the web browser to display the text on your page more
+      quickly because it can leave an appropriate amount of space for the graphic
+      while the graphic is downloaded to the reader's computer. A full image tag
+      would look like this:
+    </p>
 
     <pre><code class="html language-html">&lt;img src="fido.jpg" width="150" height="150" alt="Picture of my dog." &gt;
     </code></pre>
+
+    <h3>The &lt;picture&gt; Element</h3>
+
+    <h3>Just one more... the &lt;figure&gt; Element</h3>
+
+    <figure id="matt_05">
+      <img src="img/matt_05.jpg" alt="" width="214" height="262">
+      <figcaption>May the Force be with You</figcaption>
+    </figure>
+
+    <h2>Exercises</h2>
+
+    <ol>
+      <li>
+        Go back to your About page and add a picture of yourself. Use any of
+        the image elements I showed you in this tutorial.
+      </li>
+      <li>
+        If you haven't already, create a figure. Make sure that you include the
+        <code>figcaption</code> element too.
+      </li>
+    </ol>
 
     <p class="centered">
       <i class="fas fa-hand-point-left"></i>
@@ -86,13 +123,10 @@
     </p>
   </main>
 
-  <footer>
-    <div>Copyright &copy; 1998 - 2019, Irene Smith</div>
-    <div class="sharethis-inline-share-buttons"></div>
+  <footer id="page_footer">
   </footer>
 
   <!-- End of content -->
-  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
-  <script src="https://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+  <script type="module" src="../js/app.js"></script>
 </body>
 </html>

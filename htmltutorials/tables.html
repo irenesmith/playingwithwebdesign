@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Working with Tables</title>
+
+  <script src="https://kit.fontawesome.com/33e08446a2.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/master.css">
+  <script>var category='html';</script>
+</head>
+
+<body>
+  <header>
+    <h1>Playing with Web Design</h1>
+    <div class="navbar">
+      <nav>
+        <div class="nav-item"><a href="../">Home</a></div>
+        <div class="nav-item"><a href="../about.html">About</a></div>
+        <div class="nav-item"><a href="../generaltutorials/">Design</a></div>
+        <div class="nav-item"><a href="../htmltutorials/">HTML</a></div>
+        <div class="nav-item"><a href="../csstutorials/">CSS</a></div>
+        <div class="nav-item"><a href="../jstutorials/">JavaScript</a></div>
+        <div class="nav-item"><a href="../examples/">Examples</a></div>
+        <div class="nav-item"><a href="../contact.html">Contact Us</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Working with Tables</h2>
+
+    <h2 id="working-with-tables">Working with Tables</h2>
+
+    <p>If you&#39;ve been looking at other people&#39;s HTML coding (and there&#39;s no better way to learn how to
+      create web pages than to examine existing HTML code!) you have probably notice that most web designers make heavy
+      use of the table tag. It is a fairly safe bet that 90% or more of your visitors are using a browser that can
+      properly handle tables. There are some minor differences, but for the most part, an HTML page that uses tables
+      will be seen properly by most of your visitors.</p>
+
+    <p class="note">
+      Twenty years ago when The Tangled Web was created, tables were used for
+      layout far more than any other layout technique. When I wrote this tutorial
+      back in 1998, I had no idea what CSS was, let alone how to use it properly.
+    </p>
+
+    <p>Take a look at the HTML codes for a simple table:</p>
+
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>This is row one, cell one.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>This is row one, cell two.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>This is row two, cell one.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>This is row two, cell two.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    </code></pre>
+
+    <p>The HTML above produce this table:</p>
+    <p>Most browsers will display the table above without any border, making it look
+      like four separate lines of text. Once you&#39;re comfortable with HTML, look at
+      the CSS tutorial for formatting tables, to see how to add borders to your
+      tables.</p>
+    <p>I read in someone else&#39;s table tutorial that you can treat the cells in a table
+      as though they were HTML pages within your larger page, and that is true.</p>
+    <p>The idea is that anything you can place within the rest of your web page can be
+      placed within a table. That includes paragraph tags, image tags and even other tables!
+      You need to be a little bit careful with complexity though, because some web
+      browsers will render the entire table before showing any text.</p>
+    <p>One way to speed things up is to create several smaller tables one after the
+      other instead of a single big table. That way as each table is rendered, it
+      will become visible and give readers something to look at while the rest of the
+      page is rendered.</p>
+
+    <p class="centered">
+      <i class="fas fa-hand-point-left"></i>
+      <a href="pictures.html">Working with Images</a> |
+      <a href="lists.html">Making Lists</a>
+      <i class="fas fa-hand-point-right"></i>
+    </p>
+  </main>
+
+  <footer id="page_footer">
+  </footer>
+
+  <!-- End of content -->
+  <script type="module" src="../js/app.js"></script>
+</body>
+
+</html>
