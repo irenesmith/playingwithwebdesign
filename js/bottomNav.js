@@ -3,6 +3,10 @@ export const links = [
     'category': 'html',
     'linkList': [
       {
+        'title': 'HTML Index',
+        'url': 'index.html'
+      },
+      {
         'title': 'Your First HTML Page',
         'url': 'first.html'
       }, {
@@ -17,6 +21,10 @@ export const links = [
       }, {
         'title': 'Working with Images',
         'url': 'pictures.html'
+      },
+      {
+        'title': 'Working with Tables',
+        'url': 'tables.html'
       }
     ]
   },
@@ -30,6 +38,31 @@ export const links = [
       {
         'title': 'Looking good!',
         'url': 'good.html'
+      }
+    ]
+  },
+  {
+    'category': 'design',
+    'linkList': [
+      {
+        'title': 'Design Index',
+        'url': 'index.html'
+      },
+      {
+        'title': 'Getting Ready for Web Design',
+        'url': 'getting-ready.html'
+      },
+      {
+        'title': 'Web Development Tools',
+        'url': 'tools.html'
+      },
+      {
+        'title': 'Web Page Essentials',
+        'url': 'web-page-essentials.html'
+      },
+      {
+        'title': 'Website Essentials',
+        'url': 'website-essentials.html'
       }
     ]
   }
