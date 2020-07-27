@@ -19,11 +19,11 @@ export const links = [
         'title': 'Working with Links',
         'url': 'links.html'
       }, {
-        'title': 'Working with Images',
+        'title': 'Adding Images',
         'url': 'pictures.html'
       },
       {
-        'title': 'Working with Tables',
+        'title': 'Using Tables',
         'url': 'tables.html'
       }
     ]
